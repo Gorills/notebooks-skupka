@@ -1,0 +1,105 @@
+.header
+  width: 100%
+  position: absolute
+  top: 0
+  &-inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 30px
+    &__logo
+      font-size: 20px
+      text-decoration: none
+      color: $color-light
+      text-transform: uppercase
+    &__nav
+
+      &-link
+        text-decoration: none
+        color: $color-light
+        transition: $transition
+        text-transform: uppercase
+        font-size: 12px
+        &:hover
+          color: $color-hover
+
+      &-link + &-link
+        margin-left: 20px
+
+
+.toggle-menu
+  position: fixed
+  top: -120%
+  height: 100vh
+  width: 100%
+  z-index: 1
+  background-color: $bg-dark
+  display: flex
+  text-align: center
+  justify-content: center
+  align-items: center
+  transition: $transition
+  overflow: hidden
+
+  &__inner
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+
+    &-link
+      color: $color-light
+      text-transform: uppercase
+      text-decoration: none
+      font-weight: 700
+      font-size: 16px
+      z-index: 55
+    &-link + &-link
+      margin-top: 20px
+
+.activeMenu
+  top: 0
+
+
+
+.menu-btn
+  display: none
+  width: 40px
+  height: 40px
+  position: relative
+  cursor: pointer
+  z-index: 3
+.menu-span, .menu-span::before, .menu-span::after
+  position: absolute
+  left: 50%
+  margin-left: -10px
+  top: 50%
+  margin-top: -1px
+  width: 20px
+  height: 2px
+  background-color: #fff
+.menu-span::before, .menu-span::after
+  content: ""
+  display: block
+  transition: all .3s ease
+.menu-span::before
+  transform: translateY(-5px)
+.menu-span::after
+  transform: translateY(5px)
+.toggle
+  height: 0
+.toggle::before
+  transform: rotate(45deg)
+.toggle::after
+  transform: rotate(-45deg)
+
+
+@media only screen and (max-width : 768px)
+  .header-inner__nav
+    display: none
+  .header-inner__logo
+    display: none
+  .menu-btn
+    display: flex
+    position: fixed
+  .header-inner
+    justify-content: flex-end

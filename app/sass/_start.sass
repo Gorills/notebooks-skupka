@@ -1,0 +1,192 @@
+
+.start-inner__form-button
+  background-color: $bg-opacity
+  border: 1px solid $color-light
+  color: white
+  text-transform: uppercase
+  font-size: 12px
+  padding: 10px
+  cursor: pointer
+  transition: $transition
+  font-weight: 700
+  &:focus
+    outline: 2px solid $color-hover
+    border: none
+
+.orange
+  width: 100%
+  &:hover, &:focus
+    background-color: $color-hover
+.gray
+  width: 100%
+  &:hover, &:focus
+    background-color: rgba(39, 39, 39, 0.9)
+
+
+
+.form-popup
+  position: fixed
+  top: 0
+  left: -100%
+  height: 100vh
+  width: 100%
+  display: flex
+  //display: none
+  justify-content: center
+  align-items: center
+  padding: 0 10px
+  background-color: $bg-dark
+  transition: $transition
+  z-index: 3
+  &__title
+    color: $color-light
+    text-align: center
+    margin-bottom: 15px
+
+.popup
+  left: 0
+
+
+.start
+
+  padding-top: 55px
+  width: 100%
+  height: 100vh
+  background: url("../img/notebook.jpg")
+  background-color: rgba(0,0,0,.9)
+  background-blend-mode: darken
+  background-position: center center
+
+  color: $color-light
+  display: flex
+  align-content: center
+  text-align: center
+  &-inner
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    &__title
+      font-size: 45px
+      margin-bottom: $margin-bottom
+    &__subtitle
+      width: 100%
+      max-width: 800px
+      margin-right: auto
+      margin-left: auto
+      margin-bottom: $margin-bottom
+    &__link
+      text-decoration: none
+      color: $color-light
+      transition: $transition
+      margin-bottom: $margin-bottom
+      font-size: 20px
+      font-weight: 700
+      &:hover
+        color: $color-hover
+
+    &__form
+      width: 100%
+      max-width: 800px
+      display: flex
+      justify-content: space-between
+      flex-direction: column
+      z-index: 2
+      &-block
+        text-align: center
+        width: 100%
+        display: flex
+        margin-top: 15px
+
+        justify-content: space-around
+      &-group
+        display: flex
+        &_input
+          padding: 10px
+          background-color: $bg-opacity
+          color: $color-light
+          border: 1px solid $color-light
+          width: 100%
+          margin-bottom: 15px
+          transition: $transition
+
+          &:focus
+            outline: 2px solid $color-hover
+          &::placeholder
+            color: #a9a9a9
+
+        &_input + &_input
+          margin-left: 15px
+      &-textarea
+        height: 200px
+        resize: none
+        padding: 10px
+        background-color: $bg-opacity
+        color: $color-light
+        border: 1px solid $color-light
+        width: 100%
+        font-family: 'Open Sans', sans-serif
+        transition: $transition
+        &:focus
+          outline: 2px solid $color-hover
+        &::placeholder
+          color: #a9a9a9
+      &-button + &-button
+        margin-left: 15px
+
+.click-div
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 1
+
+.mobile-btn
+  display: none
+
+  margin-top: 20px
+  font-size: 50px
+  &_link
+    text-decoration: none
+    display: block
+    color: $color-light
+  &_link + &_link
+
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .start-inner__title
+    font-size: 40px
+  .mobile-btn
+
+    display: flex
+    justify-content: center
+    text-align: center
+    //grid-template-columns: 1fr 1fr
+    justify-content: space-between
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .start-inner__title
+    font-size: 25px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  /**/

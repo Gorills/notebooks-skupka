@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#0e0e0e">
+	<title>Скупка ноутбуков в Томске | Самые выгодные цены</title>
+	<meta name="description" content="Продать ноутбук в Томске дорого и быстро. Выезжаем на дом для оценки. Быстрая оценка по whatsapp и через сайт. Сдать ноутбук на запчасти теперь легко!"/>
+	<meta name="keywords" content="продать ноутбук, ноутбук на запчасти, Томск, сдать ноутбук" />
+	<link rel="canonical" href="https://notebooks-skupka.ru/"/>
+	<link rel="shortcut icon" href="app/img/favicon.ico" type="image/x-icon">
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Скупка ноутбуков в Томске | Самые выгодные цены" />
+	<meta property="og:description" content="Скупка техники в Томске - дорого покупаем ноутбуки, нетбуки и компьютеры в любом состоянии. Выгодно продать ноутбук можно у нас!" />
+	<meta property="og:url" content="https://tomsk-skupka.ru/" />
+	<meta property="og:site_name" content="Скупка техники в Томске" />
+
+
+<!--	<meta property="og:image" content="https://tomsk-skupka.ru/image/snippet.PNG" />-->
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:description" content="Скупка техники в Томске - дорого покупаем ноутбуки, нетбуки и компьютеры в любом состоянии. Выгодно продать ноутбук можно у нас!" />
+	<meta name="twitter:title" content="Скупка техники в Томске дорого - продать ноутбук дорого на запчасти" />
+	<link rel="stylesheet" type="text/css" href="css/style.css?Monday 6th of January 2020 09:01:31 AM" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="app/css/main.css">
+	<link rel="stylesheet" href="app/css/animate.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(56950432, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/56950432" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <meta name="yandex-verification" content="7843bf5c6d014401" />
+</head>
+<body>
+
+
+<div class="menu" id="menu">
+    <div :class="{ activeMenu: active2 }" class="toggle-menu" >
+
+        <div class="container">
+
+            <div class="toggle-menu__inner">
+                <div class="click-div" @click="active2 = !active2" :aria-pressed="active2 ? 'true' : 'false'"></div>
+                <a @click="active2 = !active2" :aria-pressed="active2 ? 'true' : 'false'" class="toggle-menu__inner-link" href="#about">О нас</a>
+                <a @click="active2 = !active2" :aria-pressed="active2 ? 'true' : 'false'" class="toggle-menu__inner-link" href="#skupka">Скупка ноутбуков</a>
+                <a @click="active2 = !active2" :aria-pressed="active2 ? 'true' : 'false'" class="toggle-menu__inner-link" href="#contacts">Контакты</a>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+
+                <a class="header-inner__logo" href="#">Скупка ноутбуков</a>
+
+                <nav class="header-inner__nav" id="menu-desc">
+                    <a class="header-inner__nav-link" href="#about">О нас</a>
+                    <a class="header-inner__nav-link" href="#skupka">Скупка ноутбуков</a>
+                    <a class="header-inner__nav-link" href="#contacts">Контакты</a>
+                </nav>
+
+                <a href="#" class="menu-btn"  @click.prevent="active2 = !active2" :aria-pressed="active2 ? 'true' : 'false'">
+                    <span :class="{ toggle: active2 }" class="menu-span"></span>
+                </a>
+
+
+
+            </div>
+        </div>
+    </header>
+</div>
+
+
+<div id="app">
+    <div :class="{ popup: active }" class="form-popup">
+        <div class="click-div" @click="active = !active" :aria-pressed="active ? 'true' : 'false'"></div>
+        <form action="/mail.php" method="POST" class="start-inner__form">
+            <h2 class="form-popup__title">Оценить ноутбук</h2>
+            <div class="start-inner__form-group">
+                <input class="start-inner__form-group_input" type="text" placeholder="Имя *" required name="user_name">
+                <input class="start-inner__form-group_input" type="tel" placeholder="Телефон *" required name="user_phone">
+            </div>
+            <textarea class="start-inner__form-input start-inner__form-textarea" placeholder="Характеристики или модель" name="user_message"></textarea>
+
+            <div class="start-inner__form-block">
+                <a @click.prevent="active = !active" :aria-pressed="active ? 'true' : 'false'" class="start-inner__form-button gray">отмена</a>
+                <button class="start-inner__form-button orange">отправить</button>
+
+            </div>
+
+        </form>
+    </div>
+
+
+
+    <section class="start">
+        <div class="container">
+            <div class="start-inner">
+                <h1 class="start-inner__title">Скупка ноутбуков в Томске</h1>
+                <p class="start-inner__subtitle">Покупаем ноутбуки в любом состоянии. На запчасти и рабочие. Продать ноутбук в Томске теперь очень просто!</p>
+                <a href="tel:89521831468" class="start-inner__link">Тел: 8 (952) 183 14 68</a>
+
+                <button @click="active = !active" :aria-pressed="active ? 'true' : 'false'" class="start-inner__form-button">Заказать звонок</button>
+
+                <div class="mobile-btn">
+                    <a class="mobile-btn_link" href="https:\\wa.me/79521831468"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+<!--                    <a class="mobile-btn_link" href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>-->
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- About -->
+<section class="section bg-dark" id="about">
+    <div class="container section__inner">
+        <h2 class="section__title title wow zoomIn">О компании</h2>
+        <p class="section__subtitle wow zoomIn" data-wow-delay="1s">Покупка и продажа ноутбуков это основная деятельность нашей компании. Уже
+            много лет мы успешно скупаем ноутбуки в Томске, восстанавливаем их и продаем с гарантией. Мы уверены
+        в качестве наших услуг и качестве продаваемой техники!</p>
+        <div class="section__about about">
+            <div class="about__item wow bounceInLeft" data-wow-duration="2s">
+                <i class="fa fa-laptop about__icon" aria-hidden="true"></i>
+                <h3 class="about__title">Скупка ноутбуков</h3>
+                <p class="about__text">Покупаем ноутбуки в любом состоянии по самым выгодным ценам. Гарантируем самую высокую цену в Томске!</p>
+            </div>
+            <div class="about__item wow bounceInUp" data-wow-duration="2s">
+                <i class="fa fa-cog about__icon" aria-hidden="true"></i>
+                <h3 class="about__title">Ремонт ноутбуков</h3>
+                <p class="about__text">Ремонтируем нотубуки от любых поломок. Восстанавливаем из любого состояния до нового! Гарантия качества.</p>
+            </div>
+            <div class="about__item wow bounceInRight" data-wow-duration="2s">
+                <i class="fa fa-usd about__icon" aria-hidden="true"></i>
+                <h3 class="about__title">Продаем ноутбуки</h3>
+                <p class="about__text">Любой восстановленный ноутбук можно приобрести в нашем магазине. Есть все варианты под любые потребности.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /About -->
+
+<!-- Skupka -->
+<section class="section bg-image" id="skupka">
+    <div class="container section__inner">
+        <h2 class="section__title title wow zoomIn">Скупка ноутбуков</h2>
+        <p class="section__subtitle wow zoomIn" data-wow-delay="1s">Если Ваш ноутбуки пришел в негодность или просто захотелось заменить его на другой, Вы всегда можете
+        обратиться к нам и мы купим его по самой выгодной цене. Не имеет значения состояние ноутбука, а так же его технические характеристики.
+        Мы покупаем любые ноутбуки, даже:</p>
+        <div class="section__about about">
+            <div class="about__item wow bounceInLeft" data-wow-duration="2s">
+                <i class="fa fa-tint about__icon" aria-hidden="true"></i>
+                <h3 class="about__title">Залитые</h3>
+                <p class="about__text">Вода или другая жидкость, которая попала в Ваш ноутбук не будет являться помехой к его продже нам. Смело приносите!</p>
+            </div>
+            <div class="about__item wow bounceInUp" data-wow-duration="2s">
+                <i class="fa fa-gavel about__icon" aria-hidden="true"></i>
+                <h3 class="about__title">Разбитые</h3>
+                <p class="about__text">Даже если ноутбук сильно разбит, там не хватает деталей и он находится в нерабочем состоянии, его можно продать нам.</p>
+            </div>
+            <div class="about__item wow bounceInRight" data-wow-duration="2s">
+                <i class="fa fa-th about__icon" aria-hidden="true"></i>
+                <h3 class="about__title">По частям</h3>
+                <p class="about__text">Если у Вас осталась только часть ноутбука, либо он находится в таком состоянии, что разные его части нельзя собрать всместе.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Skupka -->
+
+
+<!-- Contacts -->
+<section class="contacts bg-dark" id="contacts">
+    <div class="container contacts__inner">
+        <h2 class="section__title title wow bounceInLeft" data-wow-delay=".5s" data-wow-duration="2s">Как с нами связаться</h2>
+        <p class="contacts__text wow bounceInRight" data-wow-delay="1s" data-wow-duration="2s">г.Томск, ул. Советская 90</p>
+        <p class="contacts__text wow bounceInLeft" data-wow-delay="1.5s" data-wow-duration="2s">Тел: 8 (952) 183 14 68</p>
+
+
+
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2204.4233989886334!2d84.95188281592898!3d56.46046658074856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x432693551f2b41dd%3A0x377311d06625479a!2z0KHQvtCy0LXRgtGB0LrQsNGPINGD0LsuLCA5MCwg0KLQvtC80YHQuiwg0KLQvtC80YHQutCw0Y8g0L7QsdC7LiwgNjM0MDM0!5e0!3m2!1sru!2sru!4v1578479801468!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</section>
+<!-- /Contacts -->
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#menu-desc").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1500);
+        }),
+        $("#menu").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1500);
+        });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script src="app/js/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="app/js/common.js"></script>
+
+</body>
+</html>

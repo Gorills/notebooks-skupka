@@ -1,0 +1,112 @@
+// title
+
+.title
+  font-size: 25px
+  font-weight: 400
+  position: relative
+
+
+  &::after
+    content: ''
+    width: 300px
+    height: 1px
+    background-color: #333
+    position: absolute
+    top: 60px
+    left: 50%
+    transform: translate(-50%)
+
+.bg-dark
+  background-color: $bg-dark
+  border-top: 1px solid rgba(60, 60, 60, 0.62)
+  border-bottom: 1px solid rgba(60, 60, 60, 0.62)
+
+
+// section
+.section
+
+  text-align: center
+  // .section__inner
+  &__inner
+    padding: $mar-hi 20px
+  // .section__title
+  &__title
+    margin-bottom: $mar-hi
+  // .section__subtitle
+  &__subtitle
+    margin-bottom: $mar-middle
+  // .section__about
+  &__about
+    padding: 15px 0
+
+// about
+
+.about
+  display: flex
+  justify-content: space-around
+  align-items: center
+  // .about__item
+  &__item
+    padding: 40px 10px
+    border: 1px solid rgba(147, 147, 147, 0.6)
+    width: 100%
+    max-width: 300px
+  // .about__icon
+  &__icon
+    font-size: 40px
+    margin-bottom: 15px
+  //  .about__title
+  &__title
+    font-size: 18px
+    margin-bottom: 15px
+
+@media only screen and (max-width : 992px)
+  // About
+  .about
+    flex-direction: column
+    // .about__item
+    &__item
+      max-width: 100%
+      margin-left: 0
+      margin-bottom: 15px
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  /**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .start-inner__title
+    font-size: 25px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  /**/
